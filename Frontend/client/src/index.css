@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌌 Futuristic Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at 20% 20%, #1a0b2e, #090014 70%);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ✨ Glow effect */
+.glow {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
+}
+
+/* 🌫 Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ✨ Input style */
+.input-style {
+  @apply w-full px-4 py-3 rounded-xl bg-purple-900/40 text-white 
+  placeholder-gray-400 focus:outline-none focus:ring-2 
+  focus:ring-pink-500 transition;
+}
+
+/* 🔥 Gradient button */
+.btn-gradient {
+  @apply w-full py-3 rounded-xl font-semibold text-white 
+  bg-gradient-to-r from-pink-500 to-purple-500 
+  hover:scale-105 transition transform;
+}
