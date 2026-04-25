@@ -7,7 +7,7 @@ const handleSuccess = async (res) => {
 
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/auth/google",
+      "https://mern-auth-backend-4cin.onrender.com/api/auth/google-login",
       {
         credential: res.credential,
       }
